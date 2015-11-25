@@ -5,20 +5,13 @@ Once you git clone this project:
 3. ping me on slack for the credentials
 
 # STACK
-Node/Express - http://expressjs.com/api.html
-Firebase - https://www.firebase.com/docs/web/api/
-Angular - https://docs.angularjs.org/api
+1. Node/Express - http://expressjs.com/api.html
+2. Firebase - https://www.firebase.com/docs/web/api/
+3. Angular - https://docs.angularjs.org/api
 
-# File Structure
-app
-	-> js
-		-> app.js
-			- main logic for angular is stored here
-	-> views
-		- contains all pages
-views
-	-> index.ejs 
-		- main page rendered when users navigate to the main page. 
-		- contains main nav and footer, also angular container for all other pages
+# Main Files
+1. app->js->app.js (main logic for angular is stored here)
+2. app->views (contains all pages)
+3. views-> index.ejs (main page rendered when users navigate to the main page) 
 
 
