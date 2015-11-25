@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Coderthemes">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <title>Lugada - Landing Page</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Animate -->
+    <link href="css/animate.css" rel="stylesheet">
+
+    <!-- Magnific-popup -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    
+    <!-- Icon-font -->
+    <link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+<body>
+
+  <!-- Pre-loader -->
+  <div class="preloader">
+     <div class="status">&nbsp;</div>
+  </div>
+
+  <div class="tagline hidden-xs"> 
+      <div class="container"> 
+        <div class="pull-left"> 
+          <div class="phone">
+            <i class="ion-android-phone-portrait"></i> +1 800 123 45 67
+          </div>
+          <div class="email">
+            <a href="mailto:#">
+              <i class="ion-android-mail"></i> support@mail.com
+            </a>
+          </div>
+        </div>
+        <div class="pull-right"> 
+          <ul class="top_socials"> 
+            <li><a href="javascript:void(0);"><i class="ion-social-facebook"></i></a></li>
+            <li><a href="javascript:void(0);"><i class="ion-social-twitter"></i></a></li>
+            <li><a href="javascript:void(0);"><i class="ion-social-skype"></i></a></li>
+            <li><a href="javascript:void(0);"><i class="ion-social-instagram"></i></a></li>
+            <li><a href="javascript:void(0);"><i class="ion-social-dribbble"></i></a></li>
+          </ul> 
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+
+
+  <div class="navbar navbar-custom sticky" role="navigation">
+    <div class="container">
+      <!-- Navbar-header -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <i class="ion-navicon"></i>
+        </button>
+        <!-- LOGO -->
+        <a class="navbar-brand logo" href="index.html">
+          <i class="ion-social-buffer"></i>
+            <span>Lugada</span>
+        </a>
+      </div>
+      <!-- end navbar-header -->
+
+      <!-- menu -->
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#features">Features</a>
+          </li>
+          <li>
+            <a href="#services">Services</a>
+          </li>
+          <li>
+            <a href="#screenshots">Screenshots</a>
+          </li>
+          <li>
+            <a href="#pricing">Pricing</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" data-toggle="dropdown">
+              Pages
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu arrow">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="faq.html">Faq</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!--/Menu -->
+    </div>
+    <!-- end container -->
+  </div>
+  <!-- End navbar -->
+  
+
+  <!-- HOME -->
+  <section class="home bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <div class="home-wrapper">
+            <h1 class="animated fadeInDown wow" data-wow-delay=".1s">Contact Us</h1>
+            <h4 class="page-sub-title animated fadeInDown wow" data-wow-delay=".3s">Simply dummy text of the printing and type</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- END HOME -->
+
+
+  <!-- FORM -->
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <form role="form" name="ajax-form" id="ajax-form" action="php/contact.php" method="post" class="form-main">
+            <div class="col-xs-12">
+              <div class="row animated fadeInDown wow" data-wow-delay=".5s">            
+                <div class="form-group col-sm-4">
+                  <label for="name2">Name</label>
+                  <input class="form-control" id="name2" name="name" onblur="if(this.value == '') this.value='Name'" onfocus="if(this.value == 'Name') this.value=''" type="text" value="Name">
+                  <div class="error" id="err-name" style="display: none;">Please enter name</div>
+                </div> <!-- /Form-name -->
+
+                <div class="form-group col-sm-4">
+                  <label for="email2">Email</label>
+                  <input class="form-control" id="email2" name="email" type="text" onfocus="if(this.value == 'E-mail') this.value='';" onblur="if(this.value == '') this.value='E-mail';" value="E-mail">
+                  <div class="error" id="err-emailvld" style="display: none;">E-mail is not a valid format</div> 
+                </div> <!-- /Form-email -->
+
+                <div class="form-group col-sm-4">
+                  <label for="subject1">Subject</label>
+                  <input class="form-control" id="subject1" name="name" onblur="if(this.value == '') this.value='Subject'" onfocus="if(this.value == 'Subject') this.value=''" type="text" value="Subject">
+                </div> <!-- /Form-Subject -->
+              </div>  <!-- /row -->
+
+              <div class="row animated fadeInDown wow" data-wow-delay=".7s">            
+                <div class="form-group col-xs-12">
+                  <label for="message2">Message</label>
+                  <textarea class="form-control" id="message2" name="message" rows="5" onblur="if(this.value == '') this.value='Message'" onfocus="if(this.value == 'Message') this.value=''">Message</textarea>
+                  <div class="error" id="err-message" style="display: none;">Please enter message</div>
+                </div> <!-- /col -->
+              </div> <!-- /row -->
+
+              <div class="row animated fadeInDown wow" data-wow-delay=".7s">
+                <div class="col-md-8 col-md-offset-2">
+                  <p class="text-center con_sub_text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren.</p>
+                </div> <!-- /col -->
+              </div> <!-- /row -->
+
+              <div class="row">            
+                <div class="col-xs-12 text-center">
+                  <div id="ajaxsuccess">E-mail was successfully sent.</div>
+                  <div class="error" id="err-form" style="display: none;">There was a problem validating the form please check!</div>
+                  <div class="error" id="err-timedout">The connection to the server timed out!</div>
+                  <div class="error" id="err-state"></div>
+                  <button type="submit" class="btn btn-custom" id="send">Submit</button>
+                </div> <!-- /col -->
+              </div> <!-- /row -->
+
+            </div>  <!-- /row -->
+          </form> <!-- /form -->
+        </div> <!-- end col-md-12 -->
+      </div> <!-- end row -->
+     </div>
+  </section>
+
+  <!-- END FORM -->
+  
+
+
+
+  <!-- CLIENTS -->
+  <section class="clients">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-sm-12">
+          <div class="brand-item animated fadeInLeft wow" data-wow-delay=".1s">
+            <a href="#"><img alt="01 brand" src="images/clients/01_brand.png"></a>
+          </div>
+          <div class="brand-item animated fadeInLeft wow" data-wow-delay=".2s">
+            <a href="#"><img alt="02 brand" src="images/clients/02_brand.png"></a>
+          </div>
+          <div class="brand-item animated fadeInLeft wow" data-wow-delay=".3s">
+            <a href="#"><img alt="03 brand" src="images/clients/03_brand.png"></a>
+          </div>
+          <div class="brand-item animated fadeInLeft wow" data-wow-delay=".4s">
+            <a href="#"><img alt="04 brand" src="images/clients/04_brand.png"></a>
+          </div>
+          <div class="brand-item animated fadeInLeft wow" data-wow-delay=".5s">
+            <a href="#"><img alt="05 brand" src="images/clients/05_brand.png"></a>
+          </div>
+          <div class="brand-item animated fadeInLeft wow" data-wow-delay=".6s">
+            <a href="#"><img alt="06 brand" src="images/clients/06_brand.png"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END CLIENTS -->
+
+  <!-- FOOTER -->
+  <footer class="section bg-gray footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <h5>Lugada</h5>
+          <ul class="list-unstyled">
+            <li><a href="">Home</a></li>
+            <li><a href="">Features</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <h5>Social</h5>
+          <ul class="list-unstyled">
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">Behance</a></li>
+            <li><a href="">Dribbble</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <h5>Support</h5>
+          <ul class="list-unstyled">
+            <li><a href="">Help & Support</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms & Conditions</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <h5>Contact</h5>
+          <address>
+            795 Folsom Ave, Suite 600<br>
+            San Francisco, CA 94107<br>
+            <abbr title="Phone">P:</abbr> (123) 456-7890<br/>
+            E: <a href="mailto:lugada@lugada.com">lugada@lugada.com</a>
+          </address>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="footer-alt">
+            <p class="pull-right">2015 © Lugada</p>
+            <p class="logo"><i class="ion-social-buffer"></i>Lugada</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- END FOOTER -->
+
+
+
+
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Jquery easing -->                                                      
+    <script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script>
+    <script src="js/SmoothScroll.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <!--sticky header-->
+    <script type="text/javascript" src="js/jquery.sticky.js"></script>
+        
+    <!--common script for all pages-->
+    <script src="js/jquery.app.js"></script>
+
+    
+  </body>
+</html>

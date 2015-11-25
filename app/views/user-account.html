@@ -1,0 +1,78 @@
+<style>
+label, input {
+  margin: 5px;
+}
+
+.pr-button {
+  border-radius: 4px;
+}
+</style>
+<section class="section bg-gray" id="pricing">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <h1 class="title zoomIn animated wow" data-wow-delay=".1s">User Account</h1>
+      <p class="sub-title zoomIn animated wow" data-wow-delay=".2s">Constituto voluptatibus mei ex. Eum soleat lorem Ipsum is simply dummy<br/> text of the printing and typesetting industry. </p>
+    </div> 
+  </div>
+  <div class="row">
+    <div class="col-lg-10 col-lg-offset-1">
+      <div class="row">
+        <div class="col-sm-6" ng-hidden="creatingAccount">
+          <div class="pricing-item animated fadeInLeft wow" data-wow-delay=".3s">
+            <div class="pricing-item-inner">
+              <div class="pricing-wrap">     
+                <div class="pricing-icon">
+                  <i class="fa fa-user"></i>
+                </div>
+                <div class="pricing-title">
+                  Change your Email
+                </div>          
+                <div class="pricing-features row">
+                  <label class="col-xs-4 text-right">Current Email</label>
+                  <input class="col-xs-6" ng-model="user.email" ng-disabled="true"/>
+                  <div class="clearfix"></div>
+                  <label class="col-xs-4 text-right">New Email</label>
+                  <input class="col-xs-6" ng-model="newEmail"/>
+                  <div class="clearfix"></div>
+                  <label class="col-xs-4 text-right">Password</label>
+                  <input class="col-xs-6" ng-model="createPassword" type="password"/>
+                  <div class="clearfix"></div>
+                  <div class="pr-button">
+                    <a ng-click="changeEmail(user.email, newEmail, createPassword, user.uid)"class="btn btn-custom btn-rnd">Update Email</a> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6" ng-hidden="creatingAccount">
+          <div class="pricing-item animated fadeInLeft wow" data-wow-delay=".3s">
+            <div class="pricing-item-inner">
+              <div class="pricing-wrap">     
+                <div class="pricing-icon">
+                  <i class="fa fa-user"></i>
+                </div>
+                <div class="pricing-title">
+                  Change your Password
+                </div>          
+                <div class="pricing-features row">
+                  <label class="col-xs-4 text-right">Current Password</label>
+                  <input class="col-xs-6" ng-model="oldPassword" type="password"/>
+                  <div class="clearfix"></div>
+                  <label class="col-xs-4 text-right">New Password</label>
+                  <input class="col-xs-6" ng-model="newPassword" type="password"/>
+                  <div class="clearfix"></div>
+                  <div class="pr-button">
+                    <a ng-click="changePassword(user.email, oldPassword,newPassword, user.uid)"class="btn btn-custom btn-rnd">Update Email</a> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+</section>
+

@@ -1,0 +1,93 @@
+<style>
+label, input {
+  margin: 5px;
+}
+
+.pr-button {
+  border-radius: 4px;
+}
+
+.service-item .service-detail {
+  margin-left: 20px;
+}
+</style>
+<section class="section bg-gray" id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <h1 class="title zoomIn animated wow animated" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: zoomIn;">Users</h1>
+          <p class="sub-title zoomIn animated wow animated" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: zoomIn;"></p>
+        </div> 
+      </div>
+      <div class="row">
+        <h2>Active Users</h2>
+        <div class="col-sm-12" ng-repeat="user in users" ng-show="!user.deleted && user.active">
+          <div class="service-item animated fadeInLeft wow animated" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+            <div class="service-detail">
+              <h4 class="text-left">
+                <span class="col-xs-12 col-md-5">{{user.email}} (<a href="mailto:{{user.email}}" ng-model="user.admin">Email</a>)</span>
+                <span class="col-xs-12 col-md-7 text-right">
+                  <div class="row">
+                      <button class="col-xs-12 col-sm-12 col-md-4" ng-model="user.admin" ng-click="toggleUser(user.uid, 'admin')">
+                      <span ng-show="user.admin">Disable Admin</span>
+                      <span ng-hide="user.admin">Enable Admin</span>
+                    </button>
+                    <button class="col-xs-12 col-sm-12 col-md-4" ng-model="user.active" ng-click="toggleUser(user.uid, 'active')"> 
+                      <span ng-show="user.active">Inactivate</span>
+                      <span ng-hide="user.active">Activate</span>
+                    </button>
+                    <button class="col-xs-12 col-sm-12 col-md-4" ng-model="user.admin" ng-click="toggleUser(user.uid, 'deleted')">Delete</button>
+                  </div>
+                </span>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <h2>Inactive Users</h2>
+        <div class="col-sm-12" ng-repeat="user in users" ng-show="!user.deleted && !user.active">
+          <div class="service-item animated fadeInLeft wow animated" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+            <div class="service-detail">
+              <h4 class="text-left">
+                <span class="col-xs-12 col-md-5">{{user.email}} (<a href="mailto:{{user.email}}" ng-model="user.admin">Email</a>)</span>
+                <span class="col-xs-12 col-md-7 text-right">
+                  <div class="row">
+                    <button class="col-xs-12 col-sm-12 col-md-4" ng-model="user.admin" ng-click="toggleUser(user.uid, 'admin')">
+                      <span ng-show="user.admin">Disable Admin</span>
+                      <span ng-hide="user.admin">Enable Admin</span>
+                    </button>
+                    <button class="col-xs-12 col-sm-12 col-md-4" ng-model="user.active" ng-click="toggleUser(user.uid, 'active')"> 
+                      <span ng-show="user.active">Inactivate</span>
+                      <span ng-hide="user.active">Activate</span>
+                    </button>
+                    <button class="col-xs-12 col-sm-12 col-md-4" ng-model="user.admin" ng-click="toggleUser(user.uid, 'deleted')">Delete</button>
+                  </div>
+                </span>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <h2>Deleted Users</h2>
+        <div class="col-sm-12" ng-repeat="user in users" ng-show="user.deleted">
+          <div class="service-item animated fadeInLeft wow animated" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;" >
+            <div class="service-detail">
+              <h4 class="text-left">
+                <span class="col-xs-12 col-md-5">{{user.email}} (<a href="mailto:{{user.email}}" ng-model="user.admin">Email</a>)</span>
+                <span class="col-xs-12 col-md-7 text-right">
+                  <div class="row">
+                    <button class="col-xs-12" ng-model="user.admin" ng-click="toggleUser(user.uid, 'deleted')">
+                      <span ng-show="user.deleted">Restore</span>
+                      <span ng-hide="user.deleted">Delete</span>
+                    </button>
+                  </div>
+                </span>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
