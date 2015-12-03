@@ -200,7 +200,7 @@ textarea {
   z-index: 999;
 }
 .navbar-custom {
-  padding: 10px 0px;
+  /*padding: 10px 0px;*/
   margin-bottom: 0px;
   transition: background-color 1s ease-in-out, border 1s ease-in-out;
   -moz-transition: background-color 1s ease-in-out, border 1s ease-in-out;
@@ -228,6 +228,7 @@ textarea {
 
 .navbar-toggle {
   font-size: 30px;
+  float: none;
 }
 .navbar-custom .btn-custom {
   margin-top: 8px;
@@ -238,7 +239,11 @@ textarea {
   border-color: #337ab7;
 }
 
+.navbar-brand {
+  float: none;
+}
 
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 /*======= Dropdown ======= */
 .dropdown-menu {
   box-shadow: none;
