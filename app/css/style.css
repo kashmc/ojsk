@@ -52,11 +52,15 @@ body {
   background-size: cover;
   -o-background-size: cover;
 }
+
+i {
+  padding: 15px;
+}
 .learn-banner {
   text-align: center;
   color: #fff;
   background-attachment: scroll;
-  background-image: url('../images/background/SS_learnMore_Interest_pieces_lg.jpg');
+  background-image: url('../images/background/reachhigher.jpg');
   background-position: center center;
   background-repeat: none;
   -webkit-background-size: cover;
@@ -557,8 +561,8 @@ textarea {
 
 /*======= Footer =======*/
 .footer h5{
-  color: #333;
-  font-size: 15px;
+  color: white;
+  font-size: 16px;
   margin-bottom: 20px;
   font-weight: 700;
   letter-spacing: 1px;
