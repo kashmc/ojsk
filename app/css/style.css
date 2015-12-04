@@ -39,6 +39,34 @@ body {
   line-height: 22px;
   overflow-x:hidden;
 }
+
+.banner {
+  text-align: center;
+  color: #fff;
+  background-attachment: scroll;
+  background-image: url('../images/background/lonely-stars.jpg');
+  background-position: center center;
+  background-repeat: none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.learn-banner {
+  text-align: center;
+  color: #fff;
+  background-attachment: scroll;
+  background-image: url('../images/background/SS_learnMore_Interest_pieces_lg.jpg');
+  background-position: center center;
+  background-repeat: none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.dark-filter {
+  background: rgba(0,0,0,0.4);
+}
 ::selection{
   background: rgba(151, 160, 175, 0.5);
   color: #ffffff;
@@ -401,6 +429,15 @@ textarea {
   font-size: 16px;
   line-height: 30px;
   margin-top: 30px;
+}
+.feature-interests img{
+  position:relative;
+  top: 100px;
+}
+
+.feature-community img{
+  position:relative;
+  top: 100px;
 }
 
 
