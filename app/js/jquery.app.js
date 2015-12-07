@@ -210,7 +210,7 @@ jQuery(function ($) {
         },
         init: function () {
             //initializing the contact form
-            console.log('Contact form is initialized');
+            // console.log('Contact form is initialized');
             this.bindEvents();
             return this;
         }
